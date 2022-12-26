@@ -1,0 +1,59 @@
+html,
+body {
+  overscroll-behavior: auto;
+  background: #2F3C7E;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #FBEAEB;
+  color: #2F3C7E;
+  font-family: 'Concert One', cursive;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer.page-footer {
+  padding-top: 0;
+  text-align: right;
+}
+
+.nav-wrapper,
+.page-footer {
+  background-color: #2F3C7E;
+}
+
+.brand-logo {
+  margin-left: 20px;
+}
+
+.select-wrapper input.select-dropdown{
+  font-size: 34px;
+}
+
+.striped tbody > tr > :last-child{
+  font-size: 34px;
+}
+
+.span-title{
+  font-size: 30px;
+}
+
+.span-title:hover{
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+.aboutImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #101820FF;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, 
+  rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}

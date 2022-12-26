@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Spider list</h1>
+{% for spider in spiders %}
+<div class="card">
+  <a href="{% url 'detail' spider.id %}">
+    <div class="card-content">
+      <span class="card-title"><strong class="span-title">{{ spider.name }}</strong></span>
+      <p class="main-p">Breed:  {{ spider.breed }}</p>
+      <p>Level:  {{ spider.level }}</p>
+      <p>Description: {{ spider.description|linebreaks }}</p>
+      {% if spider.age > 1 %}
+      <p>Age:  {{ spider.age }}</p>
+      <!-- to break line -->
+      {% else %}
+      <p>Age:  Spiderling</p>
+      {% endif %}
+    </div>
+</div>
+</a>
+{% endfor %}
+{% endblock %}
+

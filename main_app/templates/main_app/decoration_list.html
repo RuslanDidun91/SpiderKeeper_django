@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for decoration in decoration_list %}
+<a href="{% url 'decorations_detail' decoration.id %}">
+  <div class="card">
+      <div class="card-content">
+          <span class="card-title">{{ decoration.name }}</span>
+          <p>Description: {{ decoration.description }}</p>
+      </div>
+  </div>
+</a>
+{% endfor %}
+{% endblock %}

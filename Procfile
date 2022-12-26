@@ -1,0 +1,2 @@
+web: gunicorn spiderkeeper.wsgi
+
